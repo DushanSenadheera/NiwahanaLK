@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/56016c02ef.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+    <link rel="stylesheet" href="adStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="post-ad">
+            <form action="ad.php" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <td><input type="text" placeholder="Advertisement Title" name="title" style="width: 80%;"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload your property images <input id="file" name="file[]" type="file" multiple="multiple">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Property Price" name="price"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Property Location" name="location"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="tel" placeholder="Mobile number" name="mobile"></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-bath"><input type="number" name="bathroom" min="0"
+                                    placeholder="No. of Bathrooms"></i></td>
+                        <td><i class="fas fa-bed"><input type="number" name="bedroom" min="0"
+                                    placeholder="No. of Bedrooms"></i></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-vector-square"><input type="number" name="area" min="0"
+                                    placeholder="Area of the Property"></i></td>
+                        <td><i class="fas fa-layer-group"><input type="number" name="story" min="0"
+                                    placeholder="No. of stories"></i></td>
+                    </tr>
+                    <tr>
+                        <td><pre><textarea name="description" cols="60" rows="15"
+                            placeholder="Property Description"></textarea></pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="checkbox"> I Agree to the Terms & Conditions</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Post Ad"
+                                style="background-color: #ee9b00; color: white; padding: 4px 8px;"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

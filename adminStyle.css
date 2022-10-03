@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-home {
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu li {
+  list-style: none;
+  padding: 10px;
+}
+
+.menu {
+  height: 100%;
+  background-color: #ee9b00;
+}
+
+.menu ul {
+  padding: 10px;
+}
+
+.display {
+  background-color: whitesmoke;
+}

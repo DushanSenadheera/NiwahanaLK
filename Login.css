@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(252, 252, 252);
+  background-image: url("home00.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.button {
+  background-color: rgb(255, 115, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  text-decoration: solid;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 4mm;
+}
+
+a {
+  color: rgb(0, 183, 255);
+}
+
+.user-login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 60%;
+  width: 30%;
+  color: rgb(0, 0, 0);
+  border-radius: 3%;
+}
+
+.user-login input {
+  padding: 10px;
+  border: none;
+  margin: 4px;
+  width: 92%;
+}
+
+.user-login h1 {
+  padding: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.Fpsw {
+  font-size: small;
+}
+
+.user-login p {
+  margin-top: 20px;
+}
+
+.login-input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  box-sizing: content-box;
+}

@@ -1,0 +1,27 @@
+ <h4>Filter</h4>
+                <br>
+                <b>Price</b>
+                <br>
+                Min <br> <input type="number" name="PriceMin" placeholder="Min" min="0" value="<?php echo $PriceMin ?>">
+                <br>
+                Max <br> <input type="number" name="PriceMax" placeholder="Max" min="0" value="<?php echo $PriceMax ?>">
+                <br> <br>
+                <b>Location</b>
+                <br>
+                <input type="text" placeholder="By City" name='city' value="<?php echo $city ?>">
+                <br> <br>
+                <b>Property Area</b>
+                <br>
+                <input type="number" name="area" placeholder="Area(Perch)" min="0" value="<?php echo $area ?>">
+                <br> <br>
+                <b>Features</b>
+                <br>
+                <div class="features-filter">
+                    <input type="number" name="Bedroom" placeholder="Bedrooms" min="0" value="<?php echo $Bedroom ?>">
+                    <br>
+                    <input type="number" name="Bathroom" placeholder="Bathrooms" min="0" value="<?php echo $Bathroom ?>">
+                    <br>
+                    <input type="number" name="Story" placeholder="Stories" min="0" value="<?php echo $Story ?>">
+                    <br>
+                </div>
+                <input class="btn-filter" type="submit" value="Filter" name="filter" id="filter">

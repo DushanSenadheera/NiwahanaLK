@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  background-image: url("home00.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  font-family: Calibri;
+}
+
+.button {
+  background-color: rgb(255, 115, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  text-decoration: solid;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 4mm;
+}
+
+a {
+  color: rgb(0, 183, 255);
+}
+
+
+.tandc input{
+   width: 0;
+}
+
+.reg-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  height: 93%;
+  width: 45%;
+  color: rgb(0, 0, 0);
+  border-radius: 1%;
+  padding: 8px;
+}
+
+.reg-form input {
+  padding: 8px;
+  border: none;
+  margin: 4px;
+  width: 95%;
+}
+
+.reg-form h1 {
+  color: rgb(0, 0, 0);
+}
+
+.regform {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reg-inputs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

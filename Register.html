@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Register.css">
+    <title>Register form</title>
+    <script>
+        function validateReg() {
+
+
+            let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let emailInput = document.getElementById(`emailText`).value;
+            if (!emailInput.match(mailformat)) {
+                alert("You have entered an invalid email address!");
+                return false;
+            }
+
+
+
+            if (document.regform.mobile.value == "" || isNaN(document.regform.mobile.value) ||
+                document.regform.mobile.value.length != 10) {
+
+                alert("Please provide a valid mobile number");
+                document.regform.mobile.focus();
+                return false;
+            }
+
+            if (document.regform.fname.value == "") {
+                alert("Please enter your first name");
+                document.regform.fname.focus();
+                return false;
+
+            }
+            if (document.regorm.lname.value == "") {
+                alert("Please enter your last name");
+                document.regform.lname.focus();
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="reg-form">
+
+        <h1>Register</h1><br>
+
+        <img src="userpro.png" alt="user" width="100" height="100"><br><br>
+
+        <p>Please fill in this form to create an account.</p><br>
+
+
+
+        <form action="register.php" method="post" name="regform">
+            First Name <input type="text" placeholder="First name" name="fname" id="fname">
+
+            Last name <input type="text" placeholder="Last name" name="lname" id="lname"><br>
+
+            E-mail <input type="email" placeholder="E-mail" name="emailText" id="emailText"><br>
+
+            Mobile number <input type="tel" placeholder="Mobile" name="mobile" id="mobile"><br>
+
+            Password <input type="password" placeholder="Password" name="psw" id="psw"><br>
+
+            Re-enter password <input type="password" placeholder="Re-enter Password" name="cpsw" id="cpsw"><br>
+           
+                <br>
+
+                <input type="submit" class="button" value="Register" onclick="validateReg()">
+        </form>
+</body>
+
+</html>
